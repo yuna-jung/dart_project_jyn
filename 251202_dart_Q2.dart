@@ -1,5 +1,9 @@
 void main() {
   List<String>cart=["티셔츠","바지","모자","티셔츠","바지"];
+  if(cart.isEmpty){
+    print("장바구니가 비었습니다.");
+    return;
+  }
 
 Map<String,int> price={
 '티셔츠':10000,
@@ -17,6 +21,7 @@ totalprice+=price[item]!;
 }
 }
 print("장바구니에 ${totalprice}원 어치를 담으셨네요!"); //판매가 총합
+
 
 if(totalprice>20000){ //2만원 이상이면, 10%할인 적용
   double discountedprice=totalprice*0.1; //할인율 계산 시 결과값이 소수점으로 나와서 double로 타입 지정
