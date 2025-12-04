@@ -1,15 +1,15 @@
 void main() {
-  List<String>cart=["티셔츠","바지","모자","티셔츠","바지"];
+  List<String>cart=["티셔츠","바지","모자","티셔츠","바지"]; //List를 사용하여 장바구니 리스트업
   if(cart.isEmpty){
     print("장바구니가 비었습니다.");
     return;
   }
 
-Map<String,int> price={
+Map<String,int> price={ //Map을 통해 상품별 가격 지정
 '티셔츠':10000,
 '바지':8000,
 '모자':4000
-}; //상품별 가격 지정
+}; 
 
 int totalprice=0; //판매가 총합을 지정할 변수 선언
 
